@@ -36,5 +36,5 @@ echo 'Updating ./rust/.cargo/config.toml...'
 
 cd ..
 mkdir -p rust/.cargo
-sed 's|$PWD|'"${PWD}"'|g' cargo-config.toml.template > ./rust/.cargo/config
+sed 's/$PWD/'"${PWD}"'/g' cargo-config.toml.template > ./rust/.cargo/config
 
